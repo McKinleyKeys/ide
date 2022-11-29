@@ -1,0 +1,7 @@
+
+@var  variable
+@type  variable type
+@val    value
+@int    integer value
+@float  float value
+@str    string value

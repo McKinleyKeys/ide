@@ -1,0 +1,17 @@
+#lang Redstone
+
+0: {int reg0 = mm.0;
+    int reg1 = input.0;};
+
+1: {branch (if equal(reg0, reg1)): continue;
+    goto 0;};
+
+2: {output.0;
+    int reg0 = input.1;};
+
+3: {output.0;
+    branch (if equal(reg0, 0)): goto 2;};
+
+4: {output.1;
+    mm.save(reg0);
+    endProgram;};
